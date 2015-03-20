@@ -1,7 +1,7 @@
 %global cartridgedir %{_libexecdir}/openshift/cartridges/go
 
 Name:          openshift-go-cart
-Version:       1.4.1.2
+Version:       1.4.1.3
 Release:       1%{?dist}
 Summary:       Golang cartridge
 Group:         Development/Languages
@@ -47,6 +47,8 @@ Go cartridge for OpenShift. (Cartridge Format V2)
 %{_sbindir}/oo-admin-cartridge --action install --source %{cartridgedir}
 
 %changelog
+* Fri Mar 20 2015 Chanchai <neverlock@gmail.com> 1.4.1.3-1
+- fix manifest.yml
 * Fri Mar 20 2015 Chanchai <neverlock@gmail.com> 1.4.1.2-1
 - new package built with tito
 - add spec file for build rpm package
